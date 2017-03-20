@@ -33,12 +33,12 @@ public class PokerController {
     }
 
     private void printFinalStats() {
-        logger.log("-----------------------------------------");
-        logger.log("Statistics");
-        logger.log("-----------------------------------------");
-        logger.log("Number of hands played: " + game.gameHandsCount());
+        logger.logImportant("-----------------------------------------");
+        logger.logImportant("Statistics");
+        logger.logImportant("-----------------------------------------");
+        logger.logImportant("Number of hands played: " + game.gameHandsCount());
         for (Player player : game.getPlayers()) {
-            logger.log(player.toString() + "(" + player.getPlayerController().toString() + ")" + ": " + player
+            logger.logImportant(player.toString() + "(" + player.getPlayerController().toString() + ")" + ": " + player
                     .getMoney() + "$");
         }
     }

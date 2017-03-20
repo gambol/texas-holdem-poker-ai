@@ -18,7 +18,7 @@ public class TexasModule extends AbstractModule {
     }
 
     public TexasModule() {
-        logLevel = LogLevel.ALL;
+        logLevel = LogLevel.IMPORTANT;
         gamePropertiesParameter = GamePropertiesParameter.DEMO;
     }
 

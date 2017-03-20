@@ -14,7 +14,7 @@ public class DemoGameProperties extends GameProperties {
                               final PlayerControllerPhaseIIBluff playerControllerPhaseIIBluff,
                               final PlayerControllerPhaseIIIAgressive playerControllerPhaseIIIAgressive,
                               final PlayerControllerPhaseIIIConservative playerControllerPhaseIIIConservative) {
-        super(15, 1000, 20, 10);
+        super(1000, 1000, 20, 10);
 
         addPlayer(new Player(1, getInitialMoney(), playerControllerPhaseIIBluff));
         addPlayer(new Player(2, getInitialMoney(), playerControllerPhaseIINormal));
