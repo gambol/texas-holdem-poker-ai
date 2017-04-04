@@ -2,6 +2,9 @@ package edu.ntnu.texasai.model.cards;
 
 import java.util.List;
 
+/**
+ * Equivalence 相等的
+ */
 public abstract class EquivalenceClass {
 	private final CardNumber number1, number2;
 

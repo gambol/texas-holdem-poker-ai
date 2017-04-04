@@ -13,7 +13,6 @@
 	<properties>
 		<target.jdk>1.8</target.jdk>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
 		<guice.version>3.0</guice.version>
 		<junit.version>4.10</junit.version>
 	</properties>

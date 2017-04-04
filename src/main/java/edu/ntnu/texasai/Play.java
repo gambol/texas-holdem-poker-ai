@@ -9,7 +9,7 @@ import edu.ntnu.texasai.dependencyinjection.TexasModule;
 
 public class Play {
     public static void main(String[] args) {
-        String gameP = "demo";
+        String gameP = "phase3";
         if(args.length == 1){
             gameP = args[0];
         }

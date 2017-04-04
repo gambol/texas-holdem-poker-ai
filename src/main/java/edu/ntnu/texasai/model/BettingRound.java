@@ -14,17 +14,20 @@ public class BettingRound {
     private final List<ContextInformation> contextInformations = new ArrayList<ContextInformation>();
     private int highestBet = 0;
 
-    public void applyDecision(ContextInformation contextInformation, GameProperties gameProperties) {
+    public void applyDecision(ContextInformation contextInformation, GameHand gameHand) {
         ContextAction contextAction = contextInformation.getContextAction();
         BettingDecision bettingDecision = contextAction.getBettingDecision();
         Player player = contextAction.getPlayer();
+
+        int bets = gameHand.getTotalBets();
 
         switch (bettingDecision) {
             case CALL:
                 placeBet(player, highestBet);
                 break;
             case RAISE:
-                placeBet(player, highestBet + gameProperties.getBigBlind());
+                placeBet(player, highestBet + (int)(bets * 0.66));
+                break;
         }
 
         // Don't save context information for pre flop

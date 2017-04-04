@@ -10,7 +10,7 @@ public class PhaseIIGameProperties extends GameProperties {
     @Inject
     public PhaseIIGameProperties(final PlayerControllerPhaseIINormal playerControllerPhaseIINormal,
                                  final PlayerControllerPhaseIIBluff playerControllerPhaseIIBluff) {
-        super(1000, 1000, 20, 10);
+        super(1000, 100000, 20, 10);
 
         addPlayer(new Player(1, getInitialMoney(), playerControllerPhaseIIBluff));
         addPlayer(new Player(2, getInitialMoney(), playerControllerPhaseIIBluff));

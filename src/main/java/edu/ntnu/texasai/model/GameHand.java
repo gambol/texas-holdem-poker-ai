@@ -114,7 +114,7 @@ public class GameHand {
                 getPlayersCount(), potOdds);
         ContextInformation contextInformation = new ContextInformation(contextAction, handStrength);
 
-        currentBettingRound.applyDecision(contextInformation, gameProperties);
+        currentBettingRound.applyDecision(contextInformation, this);
 
         if (bettingDecision.equals(BettingDecision.FOLD)) {
             removeCurrentPlayer();
